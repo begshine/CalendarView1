@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:gravity="center"
+    android:background="#ffc0c0c0"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/itemLady"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="#FF0000" />
+
+    <TextView
+        android:id="@+id/itemSolar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1dp"
+        android:ems="1"
+        android:layout_below="@id/itemLady"
+        android:shadowColor="#ff696969"
+        android:shadowRadius="1"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:textStyle="bold"
+        android:layout_alignParentLeft="true"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/itemLunar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:shadowColor="#ff696969"
+        android:shadowRadius="1"
+        android:layout_marginRight="2dp"
+        android:textSize="10dp"
+        android:layout_alignBottom="@id/itemSolar"
+        android:layout_alignParentRight="true"
+        android:includeFontPadding="false"
+        android:layout_gravity="right" />
+
+
+    <View
+        android:id="@+id/itemEvent"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_alignParentBottom="true"
+        android:background="#FF0000" />
+
+    <TextView
+        android:id="@+id/itemFestival"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="7dp"
+        android:maxLines="2"
+        android:layout_below="@id/itemSolar"
+        android:gravity="center"
+        android:layout_above="@id/itemEvent"
+        android:text="中华人民共和国" />
+
+
+</RelativeLayout>
